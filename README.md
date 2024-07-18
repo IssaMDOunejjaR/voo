@@ -79,10 +79,10 @@ On Windows machine go to "File Explorer" then "This PC" click on the CD Drive:\
 Double click on the "VBoxWindowsAdditions" and just follow the installation steps then reboot the virtual machine:\
 ![Windows Guest CD Install](https://i.ibb.co/17w90xb/windows-guest-cd-additions-install.png)
 
-Finally add this lines to the ubuntu hosts (/etc/hosts):\
+Finally add this lines to the ubuntu hosts (/etc/hosts) the IP added is the default gateway ip address created by virtualbox:\
 ```
 10.0.2.2 zuny.local voo.local hardware.local hey.local orange.local
 10.0.2.2 docker-zuny.voo.be
 ```
 
-If you want to access "https://localhost:9002/hac/" just change localhost with the IP "10.0.2.2"
+In the browser if you want to access "https://localhost:9002/hac/" just change localhost with the IP "10.0.2.2" and you can access other services the default way (https://orange.local:9002/fr/pack-selector)
