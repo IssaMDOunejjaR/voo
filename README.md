@@ -1,13 +1,19 @@
 # Install Virtualbox
 
-Before installation, update the package repository with:\
-`sudo apt update`
+Before installation, update the package repository with:
+```
+sudo apt update
+```
 
-Next, download and install VirtualBox by running:\
-`sudo apt install virtualbox`
+Next, download and install VirtualBox by running:
+```
+sudo apt install virtualbox
+```
 
-Install the VirtualBox Extension Pack by running:\
-`sudo apt install virtualbox-ext-pack`
+Install the VirtualBox Extension Pack by running:
+```
+sudo apt install virtualbox-ext-pack
+```
 
 Read the VirtualBox Extension Pack Personal Use and Evaluation License (PUEL) and select <Ok> to confirm:\
 ![Evaluation License](https://phoenixnap.com/kb/wp-content/uploads/2024/03/vbox-extension-pack-license.png)
@@ -15,8 +21,10 @@ Read the VirtualBox Extension Pack Personal Use and Evaluation License (PUEL) an
 Accept the VirtualBox PUEL license terms by selecting <Yes> and hitting Enter:\
 ![PUEL license terms](https://phoenixnap.com/kb/wp-content/uploads/2024/03/agree-to-vbox-extension-pack-license-terms-1.png)
 
-Once the installation is completed, VirtualBox is ready to run. Start it by executing:\
-`virtualbox`
+Once the installation is completed, VirtualBox is ready to run. Start it by executing:
+```
+virtualbox
+```
 
 # Download the Windows 10 ISO
 
@@ -79,10 +87,11 @@ On Windows machine go to "File Explorer" then "This PC" click on the CD Drive:\
 Double click on the "VBoxWindowsAdditions" and just follow the installation steps then reboot the virtual machine:\
 ![Windows Guest CD Install](https://i.ibb.co/17w90xb/windows-guest-cd-additions-install.png)
 
-Finally add this lines to the ubuntu hosts (/etc/hosts) the IP added is the default gateway ip address created by virtualbox:\
+Finally add this lines to the ubuntu hosts (/etc/hosts) the IP added is the default gateway ip address created by virtualbox:
 ```
 10.0.2.2 zuny.local voo.local hardware.local hey.local orange.local
 10.0.2.2 docker-zuny.voo.be
 ```
 
 In the browser if you want to access "https://localhost:9002/hac/" just change localhost with the IP "10.0.2.2" and you can access other services the default way (https://orange.local:9002/fr/pack-selector)
+
