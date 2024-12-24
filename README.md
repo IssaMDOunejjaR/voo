@@ -29,7 +29,12 @@ mv ./vagrant/vagrant /bin/
 
 Run Windows Machine:
 ```
-vagrant up
+make
+```
+
+Destroy Windows Machine:
+```
+make destroy
 ```
 
 Finally add this lines to the ubuntu hosts (/etc/hosts) the IP added is the default gateway ip address created by virtualbox:
